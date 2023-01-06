@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="../image/apple-touch-icon.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="../image/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="../image/favicon-16x16.png"/>
+    <link rel="manifest" href="/site.webmanifest" /> 
+    <link rel="stylesheet" href="style.css" /> 
+    <title>Thinktwice</title>
+  </head>
+  <body>
+    <header>
+      <img src="/image/mafz.png" alt="Logo">
+      <nav class="navbar">
+        <ul>
+          <li><a href="#intro" class="navlink">Home</a></li>
+          <li><a href="#services" class="navlink">Services</a></li>
+          <li><a href="#contact" class="navlink contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="intro" class="intro">
+        <div class="hero">
+          <p>Hello!</p>
+          <h1>I'm Aliyu Gambo Aliyu</h1>
+          <p>A Software Engineer</p>
+          <a href="My Updated Cv.pdf" download><button>My CV</button></a>
+        </div>
+          <img src="/image/Ali.png" alt="My Pic">
+      </section>
+      <section id="services" class="services">
+        <h2>What I do?</h2>
+        <div class="skills">
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h3>Website Design and Development</h3>
+          <p>I maximize the efficiency of web design and development tools in coming up with an innovative solutions to your business and also companies.</p>
+        </div>
+        <div>
+          <i class="fa-solid fa-wrench"></i>
+          <h3>Computer Maintenance</h3>
+          <p>I also into troubleshooting that is tracing and correct faults in a system .</p>
+        </div>
+        <div>
+          <i class="fa fa-btc"></i>
+          <h3>Forex Trader</h3>
+          <p>am also open to costomers account management in the world of crypto currency.</p>
+        </div>
+      </div>
+      </section>
+      <section class="tools" id="tools">
+        <h2>Tools</h2>
+        <div class="name">
+          <div>
+            <img src="/image/vscode.svg" alt="Logo">
+            <span>vscode</span>
+          </div>
+          <div>
+            <i class="fa-solid fa-wrench"></i>
+            <span>miantenance</span>
+          </div>
+          <div>
+            <i class="fa-brands fa-slack"></i>
+            <span>Slack</span>
+          </div>
+          <div>
+            <i class="fa fa-btc"></i>
+            <span>Binance</span>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="contact">
+      <div class="details">
+        &rarr; 
+        <span>Contact Me</span>
+        <h2>Get In Touch With Me</h2>
+        <p>I am currently available to assist you. Please feel free to use this form or email me about your project!</p>
+        <div class="info">
+          <a href="https://www.linkedin.com/in/aliyu-gamboaliyu-a68297114/"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="mailto:agathinktwice123@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="form" >
+        <form method="POST" data-netlify="true">
+          <input type="text" id="name" placeholder="Enter Name" name="name"> 
+          <input type="email" id="email" placeholder="Enter Email" name="email"> 
+          <textarea  id="message" placeholder="Enter Message" rows="3" name="message"></textarea>
+          <button type="submit" id="submit" onclick="sendEmail()"> Send To Me </button>
+      </form>
+      </div>
+    </footer>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script src="main.js"></script> 
+      
+  </body>
+</html>
+
