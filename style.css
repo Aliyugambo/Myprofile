@@ -9,6 +9,7 @@
 
 body{ 
     margin: 0 10%;
+    
 }
 
 h2{
@@ -61,7 +62,8 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 90vh; 
+    height: 90vh;
+    
 }
 
 .hero{
