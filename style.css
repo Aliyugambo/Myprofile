@@ -85,8 +85,9 @@ header{
 }
 
 
-.intro img{
+.intro-img{
     border-radius: 50%;
+
     
 }
 
@@ -137,6 +138,11 @@ header{
 .name div{
     width: 33%;
     margin-bottom: 20px;
+}
+
+.img-name{
+    height: 2.5rem;
+    width: auto;
 }
 .name i{ 
     font-size: 60px;
