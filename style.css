@@ -49,19 +49,19 @@ header{
 }
 
 .navlink:hover{
-   color: #8a2be2; 
+   color: #2f83f0; 
 }
 
 .contact{
-    border: 1px solid #8a2be2;
+    border: 1px solid #2f83f0;
     padding: 10px;
     border-radius: 10px;
 }
 .contact:hover{
-    box-shadow: 2px 2px #8a2be2;
+    box-shadow: 2px 2px #2f83f0;
 }
 .contact:active{
-    box-shadow: 2px 2px #8a2be2;
+    box-shadow: 2px 2px #2f83f0;
 }
 
 /* INTRO
@@ -83,17 +83,17 @@ header{
 }
 
 .hero button{
-    border: 1px solid #8a2be2;
+    border: 1px solid #2f83f0;
     border-radius: 20px;
     padding: 10px 14.1px;
     font-weight: 400;
     color: white;
-    background-color: #4791f1;
+    background-color: #2f83f0;
     margin-top: 10px;
 }
 
 .hero button:hover{
-    box-shadow: 2px 2px #8a2be2;
+    box-shadow: 2px 2px #2f83f0;
 }
 
 
@@ -111,7 +111,7 @@ header{
 }
 
 .social-links a:hover{
-    color: #8a2be2;
+    color: #2f83f0;
 }
 /* SERVICES
 -------------------------------------------------- */
@@ -125,7 +125,7 @@ header{
 .skills div{
     width: 30%;
     padding: 20px;
-    border: 1px solid #8a2be2;
+    border: 1px solid #2f83f0;
     border-radius: 10px;
 }
 .skills div:hover{
@@ -176,7 +176,7 @@ footer{
 }
 
 .details span{
-    color: #8a2be2;
+    color: #2f83f0;
 }
 .details p{
     color: rgb(206, 138, 138);
@@ -188,7 +188,7 @@ form input{
     padding: 10px;
     border-radius: 5px;
     margin-bottom: 10px;
-    border: 0.5px solid #8a2be2;
+    border: 0.5px solid #2f83f0;
     width: 45%;
     outline: 0;
     display: inline-block;
@@ -197,7 +197,7 @@ form input{
 textarea{
     width: 90%;
     height: 200px;
-    border: 1px solid #8a2be2;
+    border: 1px solid #2f83f0;
     border-radius: 5px;
     padding: 10px;
     font-weight: 300;
@@ -206,7 +206,7 @@ textarea{
 
 footer button{
     display: block;
-    border: 1px solid #8a2be2;
+    border: 1px solid #2f83f0;
     border-radius: 5px;
     padding: 15px 30px;
     font-weight: 400;
@@ -224,7 +224,7 @@ footer button{
     margin-right: 10px;
 }
 .info i:hover{
-    color: #8a2be2;
+    color: #2f83f0;
 }
 /* RESPONSIVENESS
 --------------------------------------------------*/
