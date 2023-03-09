@@ -2,10 +2,13 @@ const tempElement = document.querySelector('.temperature-value p');
 const descElement = document.querySelector('.temperature-discription p');
 const notificationElement = document.querySelector('.notification');
 const locationElement = document.querySelector('.location p');
+const currentTime = document.querySelector('.currenttime');
+const theTime = document.querySelector('.Mytime');
+
 function sendEmail() {
     Email.send({
-        SecureToken : "70a0bfc5-acc3-46a4-bf24-725260c50676",
-        To : 'abayomiwuraola686@gmail.com',
+        SecureToken : "",
+        To : '',
         From : document.getElementById("email").value,
         Subject : "Mail From Portfolio",
         Body : "Name: " + document.getElementById("name").value
@@ -18,7 +21,7 @@ function sendEmail() {
 
 let latitude = 0.0;
 let longitude = 0.0;
-
+const date = new Date().toLocaleDateString('en-GB');
 
 const weather ={};
 
@@ -74,4 +77,6 @@ function displayWeather(){
   descElement.innerHTML= weather.description;
   // dateElement.innerHTML=weather.date;
   locationElement.innerHTML= `${weather.city}, ${weather.country}`;
+  currentTime.textContent('text');
+  theTime.innerHTML ="bugs"
 }
