@@ -180,6 +180,32 @@ li a:hover {
     transition: all .3s ease-in-out;
 }
 
+.btn--down{
+     display: flex;
+    flex-wrap: wrap;
+    gap: 1.4rem;
+    margin-top: 1.4rem;
+}
+.btn {
+    padding: 0.39rem;
+    margin-top: 1.9rem;
+    background: var(--primary-color);
+    border-radius: .6rem;
+    box-shadow: 0 .2rem .5rem var(--shadow-color);
+    font-size: 1.3rem;
+    color: var(--white-color);
+    letter-spacing: .1rem;
+    border: .2rem solid transparent;
+    transition: .5s ease;
+}
+
+.btn:hover {
+    background: transparent;
+    color: var(--main-color);
+    border-color: var(--main-color);
+}
+
+
 .images {
     margin-left: auto;
     width: 25em;

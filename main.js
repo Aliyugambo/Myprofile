@@ -17,7 +17,7 @@ function sendEmail() {
     }).then(
       message => alert("Message Sent Successfully")
     );
-} 
+}  
 
 let latitude = 0.0;
 let longitude = 0.0;
@@ -58,7 +58,7 @@ function getWeather(latitude, logitude){
       .then(function (response){
           let data = response.json();
           return data;
-      })
+      }) 
       .then(function(data){
           weather.temperature.value=Math.round(data.main.temp -KELVIN);
           weather.description=data.weather[0].description;
@@ -79,4 +79,17 @@ function displayWeather(){
   locationElement.innerHTML= `${weather.city}, ${weather.country}`;
   currentTime.textContent('text');
   theTime.innerHTML ="bugs"
+}
+
+
+ function cvDownload() {
+  var anchorElement = document.querySelector('#down');
+  var fileName = 'My Updated Resume';
+  var fileLink = 'https://drive.google.com/file/d/1FVDhYiF8qhrrJZEUj1CLLQ7l36gYvgVi/view?usp=drive_link';
+  anchorElement.href = fileLink;
+  anchorElement.download = fileName;
+  anchorElement.target = '_blank';
+  document.body.appendChild(anchorElement);
+  console.log(anchorElement);
+  anchorElement.click();
 }
