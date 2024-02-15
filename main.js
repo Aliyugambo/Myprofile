@@ -82,8 +82,8 @@ function displayWeather(){
 }
 
 
- function cvDownload() {
-  var anchorElement = document.querySelector('#down');
+ function cvDownload(){
+  var anchorElement = document.querySelector('#down'); 
   var fileName = 'My Updated Resume';
   var fileLink = 'https://drive.google.com/file/d/1rKuuyoNH7FoBBXUqJqPR2Xp-Q0kOSxHy/view?usp=sharing';
   anchorElement.href = fileLink;
