@@ -5,6 +5,21 @@ const locationElement = document.querySelector('.location p');
 const currentTime = document.querySelector('.currenttime');
 const theTime = document.querySelector('.Mytime');
 
+// CV DOWNLORD FUNCTION 
+
+ function cvDownload(){
+  var anchorElement = document.getElementById('down'); 
+  var fileName = 'MyResume';
+  var fileLink = 'https://drive.google.com/file/d/1rKuuyoNH7FoBBXUqJqPR2Xp-Q0kOSxHy/view?usp=sharing';
+  anchorElement.href = fileLink;
+  anchorElement.download = fileName;
+  anchorElement.target = '_blank';
+  document.body.appendChild(anchorElement);
+  console.log(anchorElement);
+  anchorElement.click();
+}
+
+//  SEND EMAIL FUNCTION
 function sendEmail() {
     Email.send({
         SecureToken : "",
@@ -18,6 +33,9 @@ function sendEmail() {
       message => alert("Message Sent Successfully")
     );
 }  
+
+
+// GET WEATHER FUNCTION AND LOGIC
 
 let latitude = 0.0;
 let longitude = 0.0;
@@ -79,17 +97,4 @@ function displayWeather(){
   locationElement.innerHTML= `${weather.city}, ${weather.country}`;
   currentTime.textContent('text');
   theTime.innerHTML ="bugs"
-}
-
-
- function cvDownload(){
-  var anchorElement = document.querySelector('#down'); 
-  var fileName = 'My Updated Resume';
-  var fileLink = 'https://drive.google.com/file/d/1rKuuyoNH7FoBBXUqJqPR2Xp-Q0kOSxHy/view?usp=sharing';
-  anchorElement.href = fileLink;
-  anchorElement.download = fileName;
-  anchorElement.target = '_blank';
-  document.body.appendChild(anchorElement);
-  console.log(anchorElement);
-  anchorElement.click();
-}
+};
